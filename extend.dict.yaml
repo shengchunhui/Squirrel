@@ -1,0 +1,93 @@
+# Rime dictionary: extend
+# encoding: utf-8
+#
+# Changelog
+# Gong Chen <chen.sst@gmail.com>
+#     - Convert to Rime dictionary format.
+# Yu Yuwei <acevery@gmail.com>
+#     - Use original level 1 and 2 JianMa.
+# Yu Yuwei <acevery@gmail.com>
+#     - Update to Jidian 6, provided by Chen Xing
+# Yu Yuwei <acevery@gmail.com>
+#     - Add freqs from google.
+#     - Fix punctuation freqs
+# Chen Xing <cxcxcxcx@gmail.com>
+#     - Convert from JidianWubi table
+#
+# Original table author
+# Wozy <wozy.in@gmail.com>
+
+---
+name: extend
+version: "0.7"
+sort: by_weight
+columns:
+  - text
+  - code
+  - weight
+  - stem
+encoder:
+  exclude_patterns:
+    - '^z.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 10]
+      formula: "AaBaCaZa"
+
+...
+
+bysch0319@163.com	mbts
+北京市海淀区学院路38号北京大学医学部	fbfh
+°	ya
+℃	ya
+℃	rqya
+℃	c
+℉	wqya
+℉	ya
+℉	f
+Å	fct
++	lk
+-	udg
+×	tux
+÷	bwt
+/	bwt
+±	lkud
+∓	udlk
+∞	fqpw
++∞	gfpw
+-∞	qfpw
+≠	gitf
+=	tfgf
+≈	xqtf
+<	ihgf
+>	ddgf
+≤	igtg
+≥	dgtg
+Ⅰ	g
+Ⅱ	fg
+Ⅲ	dg
+Ⅳ	lh
+Ⅴ	gg
+Ⅵ	uy
+Ⅶ	ag
+Ⅷ	wty
+Ⅸ	vt
+Ⅹ	fgh
+Ⅺ	fggg
+Ⅻ	fgfg
+㎡	gyoy
+m³	uyoy
+¹	g
+²	fg
+³	dg
+……	ilkg
+……	i
+——	drkg
+——	d
+α	a
+β	b
+γ	y
+·	h

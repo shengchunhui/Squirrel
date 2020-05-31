@@ -1,0 +1,40 @@
+patch:
+  schema_list:
+    - {schema: wubi86}
+    - {schema: wubi86_s}
+  punctuator:
+    half_shape:
+      ',' : { commit: ， }
+      '.' : { commit: 。 }
+      '<' : { commit: 《 }
+      '>' : { commit: 》 }
+      '/' : { commit: / }
+      '?' : { commit: ？ }
+      ';' : { commit: ； }
+      ':' : { commit: ： }
+      '''' : { pair: [ '‘', '’' ] }
+      '"' : { pair: [ '“', '”' ] }
+      '\' : { commit: 、 }
+      '|' : '|'
+      '`' : '`'
+      '~' : '~'
+      '!' : { commit: ！ }
+      '@' : '@'
+      '#' : '#'
+      '%' : '%'
+      '$' : '$'
+      '^' : { commit: …… }
+      '&' : '&'
+      '*' : '*'
+      '(' : （
+      ')' : ）
+      '-' : '-'
+      '_' : ——
+      '+' : '+'
+      '=' : '='
+      '[' : { commit: 【}
+      ']' : { commit: 】}
+      '{' : '{'
+      '}' : '}'
+    
+    
